@@ -6,11 +6,11 @@ export default function Offerte() {
     <main className="pagina-offerte">
       <h2>Offerte</h2>
       <p className="sottotitolo">Prezzi scontati su partenze selezionate, fino a esaurimento posti.</p>
-      
+
       <section>
         <article className="card offerta-mese">
           <div className="immagine-offerta">
-            <img src="/img/Marocco,deserto.jpg" alt="Kasbah nel deserto del Marocco" />
+            <img src="img/Marocco,deserto.jpg" alt="Kasbah nel deserto del Marocco" />
             <span className="chip">Offerta del mese</span>
           </div>
           <div className="card-body">

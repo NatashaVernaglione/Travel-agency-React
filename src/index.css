@@ -1,0 +1,14 @@
+:root {
+  --magenta: #c2187a;
+  --magenta-scuro: #4a0e35;
+  --rosa-chiaro: #fce4f1;
+  --acqua: #1fa3b5;
+  --testo: #2a1a24;
+  --grigio: #6b5a64;
+  --bordo: #eedde7;
+  --bianco: #ffffff;
+  --raggio: 14px;
+}
+*{
+    box-sizing: border-box;
+}

@@ -1,0 +1,53 @@
+.offerta{
+    padding:20px;
+    border-radius: 8px;
+    background-color: var(--rosa-chiaro);
+    border:2px dashed var(--magenta);
+}
+.offerta .chip {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.offerta-mese img {
+    height: 280px;          /* più alta delle altre card (160px) */
+    object-position: center 40%;  /* sposta il punto che resta visibile */
+}
+.offerta-mese .chip {
+    top: 16px;
+    left: 16px;
+    right: auto;            /* il badge va in alto a sinistra */
+}
+.offerta-mese .button {
+    align-self: flex-start; /* il bottone non si allarga a tutta la riga */
+}
+.immagine-offerta {
+    position: relative;
+}
+.immagine-offerta .chip {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.offerta h2{
+    font-size:18px;
+}
+.pagina-offerte .chip,
+.offerta .chip{
+    background-color: var(--magenta);
+    color:var(--bianco);
+    padding:10px 5px;
+}
+
+.offerta del{
+    color:var(--grigio)
+}
+.offerta strong{
+    font-size: 24px;
+}

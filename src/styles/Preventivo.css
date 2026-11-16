@@ -1,0 +1,52 @@
+
+.modulo {
+    background-color: var(--bianco);
+    padding:0 20px 20px;
+}
+.modulo fieldset {
+  border: 1px solid var(--bordo);
+  border-radius: var(--raggio);
+  padding: 20px;
+  margin-top:20px;
+}
+.modulo legend {
+    float: none;          /* torna sul bordo, e contrastare l'effetto bootsrap */
+    width: auto;          /* largo quanto il testo, non tutta la riga */
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--magenta-scuro);
+    padding: 0 8px;       /* spazio tra testo e linea del bordo */
+}
+.modulo label{
+    color: var(--testo)
+}
+.modulo .form-control{
+    border: 1px solid var(--bordo);
+    padding-left:20px;
+}
+
+.modulo .form-control:focus, /* non si attiva mai: il div non riceve il focus */
+.modulo .form-control:focus-within /* si attiva: l'input dentro ha il focus */{
+    outline: 2px solid var(--acqua);
+    outline-offset: 2px;
+}
+
+.scelte input {
+    accent-color: var(--magenta);
+}
+
+.modulo .form-control:has(:required) {
+    border-left: 3px solid var(--magenta);
+    outline: none;
+}
+
+.modulo .form-control:focus-within {
+    outline: 2px solid var(--acqua);
+    outline-offset: 2px;
+}
+
+.modulo .form-control:has(:user-invalid) {
+    outline: 2px solid red;
+    outline-offset: 2px;
+}

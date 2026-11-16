@@ -1,0 +1,11 @@
+.theme-accent{
+    background-color:var(--rosa-chiaro);
+    padding:10px 30px;
+}
+.theme-accent a{
+    color: var(--magenta-scuro);
+    text-decoration: none;
+}
+.theme-accent>a:hover{
+    text-decoration:underline;
+}

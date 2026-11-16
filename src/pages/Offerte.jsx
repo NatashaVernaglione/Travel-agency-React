@@ -6,6 +6,7 @@ export default function Offerte() {
     <main className="pagina-offerte">
       <h2>Offerte</h2>
       <p className="sottotitolo">Prezzi scontati su partenze selezionate, fino a esaurimento posti.</p>
+      
       <section>
         <article className="card offerta-mese">
           <div className="immagine-offerta">

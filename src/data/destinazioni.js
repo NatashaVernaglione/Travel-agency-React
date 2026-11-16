@@ -4,7 +4,7 @@ export const ritiri = [
     titolo: "Bali, Indonesia",
     descrizione: "10 giorni · ritiro yoga",
     prezzo: "1.290€",
-    img: "/img/Bali,Indonesia.jpg",
+    img: "img/Bali,Indonesia.jpg",
     alt: "Isola degli dei",
   },
   {
@@ -12,7 +12,7 @@ export const ritiri = [
     titolo: "Kerala, India",
     descrizione: "12 giorni · ayurveda",
     prezzo: "1.540€",
-    img: "/img/Kerata,India.jpg",
+    img: "img/Kerata,India.jpg",
     alt: "Paesaggio del Kerala",
   },
 ];
@@ -23,7 +23,7 @@ export const tour = [
     titolo: "Lofoten, Norvegia",
     descrizione: "7 giorni · trekking e kayak",
     prezzo: "1.450€",
-    img: "/img/Lofoten,Norvegia.jpg",
+    img: "img/Lofoten,Norvegia.jpg",
     alt: "Lofoten, Norvegia",
   },
   {
@@ -31,7 +31,7 @@ export const tour = [
     titolo: "Marocco",
     descrizione: "6 giorni · deserto e kasbah",
     prezzo: "990€",
-    img: "/img/marocco.jpg",
+    img: "img/marocco.jpg",
     alt: "Marocco",
   },
   {
@@ -39,7 +39,7 @@ export const tour = [
     titolo: "Dolomiti, Italia",
     descrizione: "5 giorni · bici e rifugi",
     prezzo: "720€",
-    img: "/img/dolomiti.jpg",
+    img: "img/dolomiti.jpg",
     alt: "Tour in bicicletta nelle Dolomiti",
   },
 ];
@@ -50,7 +50,7 @@ export const soggiorni = [
     titolo: "Costa Rica",
     descrizione: "9 giorni · eco lodge",
     prezzo: "1.680€",
-    img: "/img/costaRica.jpg",
+    img: "img/costaRica.jpg",
     alt: "Natura in Costa Rica",
   },
   {
@@ -58,7 +58,7 @@ export const soggiorni = [
     titolo: "Maldive",
     descrizione: "8 giorni · villa sull'acqua",
     prezzo: "2.900€",
-    img: "/img/maldive.jpg",
+    img: "img/maldive.jpg",
     alt: "Barriera corallina delle Maldive",
   },
 ];
@@ -71,14 +71,14 @@ export const inEvidenza = [
     titolo: "Lofoten, Norvegia",
     descrizione: "7 giorni · tour attivo",
     prezzo: "1.450€",
-    img: "/img/lofoten.jpg",
+    img: "img/lofoten.jpg",
     alt: "Lofoten, Norvegia",
   },
   soggiorni[0],
 ];
 
 export const altreOfferte = [
-  { id: "lofoten", titolo: "Lofoten, Norvegia", descrizione: "7 giorni · tour attivo", prezzoVecchio: "1.450€", prezzoNuovo: "1.290€", sconto: "-11%", img: "/img/Lofoten,Norvegia.jpg", emoji: "🏔️", alt: "Montagne delle isole Lofoten" },
-  { id: "dolomiti", titolo: "Dolomiti, Italia", descrizione: "5 giorni · bici e rifugi", prezzoVecchio: "720€", prezzoNuovo: "590€", sconto: "-18%", img:"/img/dolomiti,bicicletta.jpg", emoji: "🚴", alt: "Tour in bicicletta nelle Dolomiti" },
+  { id: "lofoten", titolo: "Lofoten, Norvegia", descrizione: "7 giorni · tour attivo", prezzoVecchio: "1.450€", prezzoNuovo: "1.290€", sconto: "-11%", img: "img/Lofoten,Norvegia.jpg", emoji: "🏔️", alt: "Montagne delle isole Lofoten" },
+  { id: "dolomiti", titolo: "Dolomiti, Italia", descrizione: "5 giorni · bici e rifugi", prezzoVecchio: "720€", prezzoNuovo: "590€", sconto: "-18%", img:"img/dolomiti,bicicletta.jpg", emoji: "🚴", alt: "Tour in bicicletta nelle Dolomiti" },
   { id: "kerala", titolo: "Kerala, India", descrizione: "12 giorni · ayurveda", prezzoVecchio: "1.540€", prezzoNuovo: "1.390€", sconto: "-10%", img: "img/FioreLoto.jpg", emoji: "🪷", alt: "Fiore di loto del Kerala" },
 ];

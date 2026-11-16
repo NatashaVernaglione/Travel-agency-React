@@ -5,7 +5,7 @@ export default function Header() {
     <div className="header">
       <div className="barra-logo">
         <Link to="/">
-          <img src="/img/logo-altrove-bianco.svg" alt="Altrove Viaggi" className="logo" />
+          <img src="img/logo-altrove-bianco.svg" alt="Altrove Viaggi" className="logo" />
         </Link>
       </div>
       <div className="onlymobile">

@@ -8,6 +8,7 @@ import "./styles/TravelAgency.css";
 import "./styles/Destinazioni.css";
 import "./styles/Offerte.css";
 import "./styles/Preventivo.css";
+import "./styles/Contatti.css"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

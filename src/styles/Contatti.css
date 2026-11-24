@@ -1,0 +1,57 @@
+/* ===== PAGINA CONTATTI ===== */
+.contatti-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); /* info 1/3, mappa 2/3 */
+    gap: 24px;
+    align-items: stretch;
+}
+
+.contatti-info {
+    display: grid;
+    gap: 16px;
+    align-content: start;
+}
+.card {
+    overflow: hidden;
+    border: 1px solid #eadce5;
+    border-radius: var(--raggio);
+    background: var(--bianco);
+    box-shadow: 0 8px 12px rgba(74, 14, 53, 0.08);
+}
+.contatti-mappa {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+}
+.contatti-mappa .card-body {
+    flex: 0 0 auto;      /* il titolo prende solo lo spazio che serve */
+    padding-bottom: 0;
+}
+.contatti-mappa iframe {
+    flex: 1;             /* la mappa occupa tutto il resto della card */
+    width: 100%;
+    min-height: 340px;
+    border: 0;
+    margin-top: 12px;
+}
+/* link dentro i sottotitoli ("Preventivo") */
+.sottotitolo a {
+    color: var(--magenta);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(194, 24, 122, 0.35);
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+}
+.sottotitolo a:hover {
+    color: var(--magenta-scuro);
+    text-decoration-color: var(--magenta-scuro);
+}
+@media only screen and (width <= 768px) {
+    .contatti-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .contatti-mappa {
+        min-height: 360px;
+    }
+}

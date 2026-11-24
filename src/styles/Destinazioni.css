@@ -1,11 +1,31 @@
-.theme-accent{
-    background-color:var(--rosa-chiaro);
-    padding:10px 30px;
+.filtri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
 }
-.theme-accent a{
+.theme-accent {
+    background-color: var(--rosa-chiaro);
+    padding: 10px 30px;
+    border-radius: var(--raggio);
+    transition: background-color 0.2s, transform 0.2s;
+}
+.theme-accent button {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
     color: var(--magenta-scuro);
-    text-decoration: none;
+    cursor: pointer;
 }
-.theme-accent>a:hover{
-    text-decoration:underline;
+.theme-accent:hover {
+    background-color: #f5c6e0;   /* rosa un po' più scuro */
+    transform: translateY(-2px); /* si solleva leggermente */
+    box-shadow: 0 6px 16px rgba(74, 14, 53, 0.15); /* ombra  per richiamare le card sottostanti*/
+} 
+.theme-accent.attivo {
+    background-color: var(--magenta);
+}
+.theme-accent.attivo button {
+    color: var(--bianco);
 }

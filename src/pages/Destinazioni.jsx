@@ -1,3 +1,4 @@
+import { useState } from "react";
 import DestinazioneCard from "../components/DestinazioneCard.jsx";
 import { ritiri, tour, soggiorni } from "../data/destinazioni.js";
 
@@ -16,30 +17,77 @@ function Sezione({ id, titolo, sottotitolo, mete }) {
   );
 }
 
-const filtri = [
-  { href: "#", testo: "Tutte", attivo: true },
-  { href: "#ritiri", testo: "Ritiri" },
-  { href: "#tour", testo: "Tour attivi" },
-  { href: "#soggiorni", testo: "Soggiorni" },
+const sezioni = [
+  {
+    id: "ritiri",
+    chip: "Ritiri",
+    titolo: "Ritiri",
+    sottotitolo: "Yoga, meditazione e benessere in luoghi tranquilli",
+    mete: ritiri,
+  },
+  {
+    id: "tour",
+    chip: "Tour attivi",
+    titolo: "Tour attivi",
+    sottotitolo: "Trekking, kayak e bici con guide locali",
+    mete: tour,
+  },
+  {
+    id: "soggiorni",
+    chip: "Soggiorni",
+    titolo: "Soggiorni",
+    sottotitolo: "Strutture esclusive scelte una per una",
+    mete: soggiorni,
+  },
 ];
 
+// "Tutte" + un filtro per ogni sezione
+const filtri = [{ id: "tutte", chip: "Tutte" }, ...sezioni];
+
 export default function Destinazioni() {
-  
+  const [filtroAttivo, setFiltroAttivo] = useState("tutte");
+
+  const sezioniVisibili =
+    filtroAttivo === "tutte"
+      ? sezioni
+      : sezioni.filter((s) => s.id === filtroAttivo);
+
   return (
     <main>
       <div className="destinazioni">
         <h2>Destinazioni</h2>
-        <p className="sottotitolo">Scegli il tipo di viaggio e trova la meta giusta per te.</p>
+        <p className="sottotitolo">
+          Scegli il tipo di viaggio e trova la meta giusta per te.
+        </p>
+
         <nav className="filtri" aria-label="Tipo di viaggio">
           {filtri.map((f) => (
-            <span className="chip theme-accent" key={f.testo}>
-              <a href={f.href} className={f.attivo ? "attivo" : undefined}>{f.testo}</a>
+            <span
+              key={f.id}
+              className={
+                "chip theme-accent" + (filtroAttivo === f.id ? " attivo" : "")
+              }
+            >
+              <button
+                type="button"
+                aria-pressed={filtroAttivo === f.id}
+                onClick={() => setFiltroAttivo(f.id)}
+              >
+                {f.chip}
+              </button>
             </span>
           ))}
         </nav>
-        <Sezione id="ritiri" titolo="Ritiri" sottotitolo="Yoga, meditazione e benessere in luoghi tranquilli" mete={ritiri} />
-        <Sezione id="tour" titolo="Tour attivi" sottotitolo="Trekking, kayak e bici con guide locali" mete={tour} />
-        <Sezione id="soggiorni" titolo="Soggiorni" sottotitolo="Strutture esclusive scelte una per una" mete={soggiorni} />
+
+        {sezioniVisibili.map((s) => (
+          <Sezione
+            key={s.id}
+            id={s.id}
+            titolo={s.titolo}
+            sottotitolo={s.sottotitolo}
+            mete={s.mete}
+          />
+        ))}
       </div>
     </main>
   );

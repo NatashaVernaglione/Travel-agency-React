@@ -81,7 +81,6 @@ export default function Home() {
           <div className="form-control form-adorn">
             <input type="number" className="form-ghost" id="persone" name="persone" min="1" step="1" defaultValue="2" />
           </div>
-          {/* nell'HTML era un <a> dentro un <button>: in React uso un semplice Link */}
           <Link to="/preventivo" className="button">preventivo</Link>
         </form>
 
